@@ -1,0 +1,38 @@
+{
+  "name": "mokens-banking-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsnd --respawn src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.8",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "9.0.7",
+    "@types/node": "^22.13.14",
+    "@types/nodemailer": "^6.4.17",
+    "rimraf": "^6.0.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@types/pug": "^2.0.10",
+    "bcryptjs": "3.0.2",
+    "cookie-parser": "^1.4.7",
+    "env-var": "^7.5.0",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.10.0",
+    "pg": "^8.14.1",
+    "pug": "^3.0.3",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.21",
+    "zod": "^3.24.2"
+  }
+}

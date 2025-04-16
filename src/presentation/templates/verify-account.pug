@@ -1,0 +1,73 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Banking API Account Verification
+    style.
+      body {
+        background-color:rgb(19, 18, 18);
+        color: #ffffff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 50px 20px;
+        text-align: center;
+      }
+      .container {
+        max-width: 500px;
+        margin: auto;
+        background-color:rgb(19, 18, 18);
+        padding: 30px 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+      h1 {
+        color:rgb(0, 11, 163);
+        margin-bottom: 7px;
+        font-size: 1.7em;
+      }
+      h2 {
+        margin-bottom: 14px;
+        font-size: 1.2em;
+      }
+      .message {
+        font-size: 1.1em;
+        margin-bottom: 21px;
+      }
+      a.button {
+        display: inline-block;
+        background-color:rgb(87, 6, 6);
+        color: #ffffff;
+        padding: 10px 25px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+      a.button:hover {
+        background-color:rgb(83, 83, 83);
+      }
+      .footer {
+        margin-top: 30px;
+        font-size: 0.85em;
+        color: #bbbbbb;
+      }
+      .footer a {
+        color:rgb(2, 33, 46);
+        text-decoration: none;
+      }
+      .footer a:hover {
+        text-decoration: underline;
+      }
+
+  body
+    .container
+      h1 Banking API Account Validation
+      h2 Greetings #{name}, please validate your account to use our service.
+      p.message Click the button below to validate your banking account.
+      a.button(href=link) Validate Email
+
+      .footer
+        p Validate your email 
+          a(href=`mailto:${email}`)= ` ${email} `
+          |  so you can start transfering money.
+        p If you don't remember creating an account in our banking API, please, ignore this email.
